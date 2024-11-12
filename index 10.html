@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const findMinNumber = (arr) => {
+        return arr.reduce((min, current) => (current < min ? current : min), arr[0]);
+    };
+
+    // Приклад використання
+    const numbers = [5, 3, 8, 1, 4];
+    const minNumber = findMinNumber(numbers);
+    console.log(`Найменше число: ${minNumber}`);
+
+</script>
+</body>
+</html>

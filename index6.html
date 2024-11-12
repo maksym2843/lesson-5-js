@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const createList = (text) => {
+    const ul = document.createElement('ul');
+
+    for (let i = 0; i < 3; i++) {
+      const li = document.createElement('li');
+      li.textContent = text;
+      ul.appendChild(li);
+    }
+
+    document.body.appendChild(ul);
+  };
+
+  // Приклад використання
+  createList('Цей текст буде у всіх трьох елементах списку.');
+
+
+</script>
+</body>
+</html>

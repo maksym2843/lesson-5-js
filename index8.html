@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const createListFromArray = (arr) => {
+    const ul = document.createElement('ul');
+
+    arr.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+
+    document.body.appendChild(ul);
+  };
+
+  // Приклад використання
+  createListFromArray([1, 'Привіт', true, 42, 'JavaScript', false]);
+
+</script>
+</body>
+</html>
